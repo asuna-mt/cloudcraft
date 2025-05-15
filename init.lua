@@ -7,8 +7,8 @@ cloudcraft = {
   storage = core.get_mod_storage(),
   settings = {
     clouds = {
-      y_min = tonumber(core.settings:get("cloudcraft.clouds.y_min",250) or 250),
-      y_max = tonumber(core.settings:get("cloudcraft.clouds.y_max",31000) or 31000),
+      y_min = tonumber(asuna.content.stratosphere.cloudcraft and (core.settings:get("cloudcraft.clouds.y_min",250) or 250) or -31000),
+      y_max = tonumber(asuna.content.stratosphere.cloudcraft and (core.settings:get("cloudcraft.clouds.y_max",31000) or 31000) or -31000),
     },
   },
   dependencies = (function()
