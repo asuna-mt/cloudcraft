@@ -11,7 +11,7 @@ if cloudcraft.dependencies.awards then
   awards.register_award("cloudcraft:cumulonimble",{
     title = "Cumulonimble",
     description = "Get a node's unique self-drop by digging with an appropriate cloud tool",
-    icon = "no_texture.png",
+    icon = "cloudcraft_cloud_pickaxe.png",
     difficulty = 115,
   })
 end
